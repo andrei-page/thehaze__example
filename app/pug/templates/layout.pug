@@ -1,0 +1,22 @@
+block first-line
+|
+|
+doctype html
+html(lang='en')
+	head
+		title PageTitle
+		meta(name="description" content="")
+		include ../inc/head
+	body
+		.wrapper
+			include ../utils/mixins
+			include ../inc/header
+			|
+			|
+			block main
+			|
+			|
+			include ../inc/footer
+		
+		block scripts
+			script(src='js/main.js')
