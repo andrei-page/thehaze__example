@@ -2,6 +2,9 @@
 	box-sizing: border-box
 
 a, input, select, textarea
+	text-decoration: none;
+	&:hover
+		text-decoration: none !important
 	&:focus
 		outline: 0
 
@@ -14,7 +17,11 @@ html
 	+sm
 		font-size: .8rem
 	
-
+.container-fluid
+	padding-left: 40px !important
+	padding-right: 40px !important
 body
-	font-size: 1rem
-	+font-fallback('Roboto')
+	font-size: 16px
+	font-family: proxima_novalight,sans-serif
+.b-top
+    padding-top: 100px
