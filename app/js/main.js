@@ -1,3 +1,5 @@
+
+
 $(" .b-menu__item-arrow").click(function(){
     $("#menu-remove").addClass("remove-menu");
     if($("#menu-remove").hasClass("remove-menu")){
@@ -23,3 +25,13 @@ window.onscroll = function () {
       $(".b-header__box-top").removeClass("b-header__box-small");
   }
 };
+
+// $("#tab-1").click(function(){
+//   $("#tab-content2").fadeOut();
+//   $("#tab-content1").fadeIn();
+// });
+
+// $("#tab-2").click(function(){
+//   $("#tab-content1").fadeOut();
+//   $("#tab-content2").fadeIn();
+// });

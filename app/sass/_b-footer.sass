@@ -1,0 +1,70 @@
+.b-footer
+    font-size: 12px;
+    width: 100%
+    line-height: 55px
+    margin-top: 100px
+    
+    &__text
+        font-weight: 300
+        line-height: 67px
+        font-size: 11px
+        font-family: 'proxima_novalight'
+        a
+            font-family: 'proxima_novaregular'
+            &:hover
+                opacity: 0.6
+    &__menu
+        ul
+            list-style-type: none
+            padding: 0;
+            margin-bottom: 0;
+            margin-right: 18px;
+            text-transform: uppercase;
+            li
+                display: inline-block;
+                margin-right: 20px;
+                margin-bottom: 2px;
+                transition: all 0.25s;
+                a
+                    font-size: 11px;
+                    line-height: 15px
+                    font-weight: 400;
+                    white-space: nowrap;
+                    cursor: pointer;
+                    color: #000;
+                    position: relative
+                    font-family: 'proxima_novaregular'
+                    &:hover::before
+                        content: "/"
+                        position: absolute
+                        top: -1px
+                        left: -7px
+                        display: inline-block
+                    &:focus::before
+                        content: "/"
+                        position: absolute
+                        top: -1px
+                        left: -7px
+                        display: inline-block
+            
+    &__icons
+        ul
+            list-style-type: none
+            padding: 0;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            li
+                display: inline-block;
+                margin-right: 13px;
+                transition: all 0.25s;
+                a
+                    font-size: 12px;
+                    line-height: 15px
+                    font-weight: 400;
+                    white-space: nowrap;
+                    cursor: pointer;
+                    color: #000;
+                    position: relative
+                    font-family: 'proxima_novaregular'
+            &:last-child
+                margin-right: 0

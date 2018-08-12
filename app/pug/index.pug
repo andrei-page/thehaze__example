@@ -24,6 +24,8 @@ block main
                         .b-header__nav.b-header--right
                             ul
                                 li
+                                    a(href="#") Поиск
+                                li
                                     a(href="#") Корзина (0)
                                 li
                                     a(href="#") Войти
@@ -83,12 +85,12 @@ block main
                                         p  officiis velit autem sit ut excepturi, est consectetur accusamus, hic eligendi.Nam quia, dolor sit minima consequuntur, ab dolores ea alias a voluptatem accusantium. Laboriosam dolor iusto molestiae quidem, molestias dolores quos qui officia. Totam aliquid et nostrum obcaecati, nemo error!Corporis id commodi voluptatem maiores odit mollitia culpa aliquam nemo rem magnam qui totam magni incidunt, iusto ea nobis voluptatibus! Corporis ut dicta rem laboriosam repellendus, soluta quaerat! Atque, praesentium.Similique exercitationem eligendi dicta omnis atque repudiandae sequi autem temporibus suscipit nesciunt ab cumque, ad, quod, iure laborum nihil sunt mollitia! Nemo asperiores, eligendi cupiditate nostrum repudiandae quos dolorem deserunt!
                             
                             a(href="#").b-menu__news-link Предложить новость
-                            .b-header__tab-link#tab1 Вид 1
+                            .b-header__tab-link(tabindex="0")#tab-1 Вид 1
                             span.b-header__link-span /
-                            .b-header__tab-link Вид 2
+                            .b-header__tab-link(tabindex="0")#tab-2 Вид 2
                         .col-2
                             img(src="img/arrow-left.png", alt="arrow-left").b-menu__item-arrow
-            .col-lg-10.b-article__box-top
+            .col-lg-10.b-article__box-top#tab-content1
                 .row.no-gutters
                     .row
                         .col-sm-12.col-md-4.col-lg-4
@@ -216,7 +218,169 @@ block main
                                             |   476 просмотров
                                     .col-2.b-article__list.justify-content-center.align-items-end
                                         .b-article__box-bg
-                    
-           
+            .col-lg-10.b-article__box-top#tab-content2
+                .row.no-gutters
+                    .col-sm-12.col-md-4.col-lg-9
+                        a(href="#").b-article__box
+                            .row.b-article__border-box
+                                .col-6
+                                    .b-article__box-img
+                                .col-6
+                                    
+                                    .row
+                                        .col-10
+                                            .b-article__box-desc.b-article__box-up
+                                                span.b-article__box-span КУЛЬТУРА 
+                                                span.b-article__box-item   9 июля   
+                                            .b-article__box-title.b-article__up / Дерек Бласберг x Youtube
+                                            .b-article__box-text Дерек Бласберг возглавил сегмент Youtube,отвечающий за коммункации с брендами и инфлюэнсерами.
+                                            .b-article__box-comment
+                                                span.b-article__item-name Anton Skorohod  
+                                                span.b-article__box-item   476 просмотров
+                                                |   12 комментариев  
+                                        .col-2.b-article__list.justify-content-center.align-items-end
+                                            .b-article__box-bg(tabindex="0")
+                        a(href="#").b-article__box   
+                            .row.b-article__border-box.b-article__block-indent
+                                .col-6
+                                    .b-article__box-img
+                                .col-6
+                                    .row
+                                        .col-10
+                                            .b-article__box-desc.b-article__box-up
+                                                span.b-article__box-span КУЛЬТУРА 
+                                                span.b-article__box-item   9 июля   
+                                            .b-article__box-title.b-article__up / Дерек Бласберг x Youtube
+                                            .b-article__box-text Дерек Бласберг возглавил сегмент Youtube,отвечающий за коммункации с брендами и инфлюэнсерами.
+                                            .b-article__box-comment
+                                                span.b-article__item-name Anton Skorohod  
+                                                span.b-article__box-item   476 просмотров
+                                                |   12 комментариев  
+                                        .col-2.b-article__list.justify-content-center.align-items-end
+                                            .b-article__box-bg(tabindex="0")
+                        a(href="#").b-article__box    
+                            .row.b-article__border-box.b-article__block-indent
+                                .col-6
+                                    .b-article__box-img
+                                .col-6
+                                    
+                                    .row
+                                        .col-10
+                                            .b-article__box-desc.b-article__box-up
+                                                span.b-article__box-span КУЛЬТУРА 
+                                                span.b-article__box-item   9 июля   
+                                            .b-article__box-title.b-article__up / Дерек Бласберг x Youtube
+                                            .b-article__box-text Дерек Бласберг возглавил сегмент Youtube,отвечающий за коммункации с брендами и инфлюэнсерами.
+                                            .b-article__box-comment
+                                                span.b-article__item-name Anton Skorohod  
+                                                span.b-article__box-item   476 просмотров
+                                                |   12 комментариев  
+                                        .col-2.b-article__list.justify-content-center.align-items-end
+                                            .b-article__box-bg(tabindex="0")
+                        a(href="#").b-article__box     
+                            .row.b-article__border-box.b-article__block-indent
+                                .col-6
+                                    .b-article__box-img
+                                .col-6
+                                    .row
+                                        .col-10
+                                            .b-article__box-desc.b-article__box-up
+                                                span.b-article__box-span КУЛЬТУРА 
+                                                span.b-article__box-item   9 июля   
+                                            .b-article__box-title.b-article__up / Дерек Бласберг x Youtube
+                                            .b-article__box-text Дерек Бласберг возглавил сегмент Youtube,отвечающий за коммункации с брендами и инфлюэнсерами.
+                                            .b-article__box-comment
+                                                span.b-article__item-name Anton Skorohod  
+                                                span.b-article__box-item   476 просмотров
+                                                |   12 комментариев  
+                                        .col-2.b-article__list.justify-content-center.align-items-end
+                                            .b-article__box-bg(tabindex="0")
+                            
+                            
+                                
+                                    
+                    .col-sm-12.col-md-4.col-lg-3
+                        .row
+                            .col-sm-12
+                                .b-header__sidebar-music
+                                    .b-header__music-top
+                                        .b-header__title-music / ПЛЕЙЛИСТ 
+                                        .b-header__share-music ...
+                                    .row
+                                        .col-6
+                                            img(src="img/logo-music.png", alt="logo music").b-header__img-music
+                                        .col-6
+                                            .b-header__list 
+                                                .b-header__list-title THE PLAYLIST
+                                                .b-header__list-text №1
+                                                .b-header__list-link Слушать
+                                .b-header__sidebar-music
+                                    .b-header__music-top
+                                        .b-header__title-music / шоу 
+                                        .b-header__share-music ...
+                                    .row
+                                        .col-6
+                                            img(src="img/logo-music.png", alt="logo music").b-header__img-music
+                                        .col-6
+                                            .b-header__list 
+                                                .b-header__list-title THE PLAYLIST
+                                                .b-header__list-text №1
+                                                .b-header__list-link Слушать
+                                    .row
+                                        .col-6
+                                            img(src="img/img.jpg", alt="logo music").b-header__img-music
+                                        .col-6
+                                            .b-header__list 
+                                                .b-header__list-title THE PLAYLIST
+                                                .b-header__list-text №1
+                                                .b-header__list-link Слушать
+                                        
+                                    
+
+
+        .b-footer
+            .row
+                .d-none.d-sm-flex.col-sm-8.justify-content-center.justify-content-sm-end.order-sm-last
+                    .b-footer__menu
+                        ul
+                            li
+                                a(href="/about-us",data-toggle="modal",data-type="local",data-target="#modal") о студии
+                            li
+                                a(href="/manifest",data-toggle="modal",data-type="local",data-target="#modal") манифест
+                            li
+                                a(href="/cooperation",data-toggle="modal",data-type="local",data-target="#modal") сотрудничество
+                            li
+                                a(href="/contacts",data-toggle="modal",data-type="local",data-target="#modal") контакты
+                            li
+                                a(href="/delivery",data-toggle="modal",data-type="local",data-target="#modal") доставка
+                    .b-footer__icons
+                        ul
+                            li
+                                a(href="#",target="_blank") 
+                                    i.fab.fa-vk
+                            li
+                                a(href="https://facebook.com/thehaze.ru",target="_blank")
+                                    i.fab.fa-facebook-f
+                            li
+                                a(href="https://behance.com/thehaze",target="_blank")
+                                    i.fab.fa-behance
+                            li
+                                a(href="https://vimeo.com/thehaze",target="_blank")
+                                    i.fab.fa-vimeo-v
+                            li
+                                a(href="https://t.me/thehaze",target="_blank")
+                                    i.fab.fa-telegram-plane
+                            li
+                                a(href="https://instagram.com/thehaze",target="_blank")   
+                                    i.fab.fa-instagram 
+                .col-12.col-sm-4.order-sm-first.text-center.text-sm-left
+                    .b-footer__text © 2018 THĒ. Digital Art Studio. Founded by 
+                        a(href="https://www.thehaze.us/") Zorik Istomin
+                                    
+                                    
+                        
+                        
+                       
             
-            
+                
+                

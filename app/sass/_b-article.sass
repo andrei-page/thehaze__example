@@ -14,6 +14,8 @@
         font-family: 'proxima_novasemibold';
         letter-spacing: 0.95px;
         padding: 10px 0
+        &:hover
+            opacity: 0.6
     &__box-span
         padding-right: 10px
         text-transform: uppercase
@@ -21,11 +23,12 @@
         padding-right: 10px
     &__box-top
         padding-top: 10px
+    &__up
+        padding-top: 80px !important
     &__box-bg
         width: 11px
         height: 20px
         user-select: none
-        z-index: 10
         background: url("../img/arrow.svg") no-repeat center
         background-size: cover
         cursor: pointer
@@ -37,7 +40,7 @@
             background: url("../img/flash-fill.svg") no-repeat center
             background-size: cover
             cursor: pointer
-            z-index: 10
+            outline: none
        
     &__box-text
         color: #000000;
@@ -52,6 +55,12 @@
         font-family: 'proxima_novalight'
         font-size: .7em
         font-weight: 300
+    &__box-comment
+        color: #000000;
+        font-family: 'proxima_novalight'
+        font-size: .7em
+        font-weight: 300
+        padding-top: 70px
     &__box-up
         padding-top: 20px
     &__list
@@ -59,6 +68,17 @@
         flex-wrap: wrap;
         padding-right: 20px
         flex-direction: row
+    &__block-indent
+        margin-top: 50px
+    &__border-box
+        &:after
+            content: ""
+            display: block
+            background: rgba(38, 22, 44, .2);
+            width: 95%
+            margin-top: 50px
+            margin-left: 14px
+            height: 1px
 
 
   
