@@ -30,9 +30,9 @@ block main
                                 li
                                     a(href="#") Войти
         .row.b-header__top
-            .col-lg-2
+            .col-md-2#tab-row
                     .row
-                        .col-10#menu-remove
+                        .col-10.col-md-9.col-lg-10#menu-remove
                             .b-menu__item
                                 .b-menu__item-text * Журнал о современной культуре. Поток новостей обо всём, что нужно знать современному человеку.
                             .b-menu__top-item
@@ -78,23 +78,21 @@ block main
                                                     a(href="") Релизы
                                                 li
                                                     a(href="") Анонсы
-                                .b-menu__tab
-                                    input#tab-three(type='checkbox', name='tabs')
-                                    label(for='tab-three') ПОПУЛЯРНОЕ
-                                    .b-menu__tab-content
-                                        p  officiis velit autem sit ut excepturi, est consectetur accusamus, hic eligendi.Nam quia, dolor sit minima consequuntur, ab dolores ea alias a voluptatem accusantium. Laboriosam dolor iusto molestiae quidem, molestias dolores quos qui officia. Totam aliquid et nostrum obcaecati, nemo error!Corporis id commodi voluptatem maiores odit mollitia culpa aliquam nemo rem magnam qui totam magni incidunt, iusto ea nobis voluptatibus! Corporis ut dicta rem laboriosam repellendus, soluta quaerat! Atque, praesentium.Similique exercitationem eligendi dicta omnis atque repudiandae sequi autem temporibus suscipit nesciunt ab cumque, ad, quod, iure laborum nihil sunt mollitia! Nemo asperiores, eligendi cupiditate nostrum repudiandae quos dolorem deserunt!
-                            
+                            .b-menu__box-link ПОПУЛЯРНОЕ
                             a(href="#").b-menu__news-link Предложить новость
                             .b-header__tab-link(tabindex="0")#tab-1 Вид 1
                             span.b-header__link-span /
                             .b-header__tab-link(tabindex="0")#tab-2 Вид 2
-                        .col-2
+                        .col-2.col-md-3.col-lg-2#active-arrow
                             img(src="img/arrow-left.png", alt="arrow-left").b-menu__item-arrow
-            .col-lg-10.b-article__box-top#tab-content1
-                .row.no-gutters
+                        .col-2.col-md-3.col-lg-2#remove-arrow
+                            img(src="img/arrow-left.png", alt="arrow-left").b-menu__arrow-rotate
+            .col-md-10.col-sm-12.b-article__box-top#tab-content1
+                .row
                     .row
-                        .col-sm-12.col-md-4.col-lg-4
-                            a(href="#").b-article__box
+                        .col-sm-12.col-md-4.col-lg-4.b-header__mobile-box
+                            .b-article__box
+                                a(href="#")
                                 .b-article__box-img
                                 .row
                                     .col-10
@@ -105,10 +103,11 @@ block main
                                             span.b-article__box-item   9 июля   
                                             |  476 просмотров
                                     .col-2.b-article__list.justify-content-center.align-items-end
-                                        .b-article__box-bg
+                                        .b-article__box-bg(tabindex="0")
                                
-                        .col-sm-12.col-md-4.col-lg-4
-                            a(href="#").b-article__box
+                        .col-sm-12.col-md-4.col-lg-4.b-header__mobile-box
+                            .b-article__box
+                                a(href="#")
                                 .b-article__box-img
                                 .row
                                     .col-10
@@ -119,10 +118,11 @@ block main
                                             span.b-article__box-item 9 июля 
                                             |  476 просмотров
                                     .col-2.b-article__list.justify-content-center.align-items-end
-                                        .b-article__box-bg
+                                        .b-article__box-bg(tabindex="0")
                                 
-                        .col-sm-12.col-md-4.col-lg-4
-                            a(href="#").b-article__box
+                        .col-sm-12.col-md-4.col-lg-4.b-header__mobile-box
+                            .b-article__box
+                                a(href="#")
                                 .b-article__box-img
                                 .row
                                     .col-10
@@ -133,12 +133,13 @@ block main
                                             span.b-article__box-item   9 июля
                                             |   476 просмотров
                                     .col-2.b-article__list.justify-content-center.align-items-end
-                                        .b-article__box-bg
+                                        .b-article__box-bg(tabindex="0")
                             
                                 
                     .row.b-article__box-up
-                        .col-sm-12.col-md-4.col-lg-4
-                            a(href="#").b-article__box
+                        .col-sm-12.col-md-4.col-lg-4.b-header__mobile-box
+                            .b-article__box
+                                a(href="#")
                                 .b-article__box-img
                                 .row
                                     .col-10
@@ -149,10 +150,11 @@ block main
                                             span.b-article__box-item 9 июля
                                             |   476 просмотров
                                     .col-2.b-article__list.justify-content-center.align-items-end
-                                            .b-article__box-bg
+                                            .b-article__box-bg(tabindex="0")
                                 
-                        .col-sm-12.col-md-4.col-lg-4
-                            a(href="#").b-article__box
+                        .col-sm-12.col-md-4.col-lg-4.b-header__mobile-box
+                            .b-article__box
+                                a(href="#")
                                 .b-article__box-img
                                 .row
                                     .col-10
@@ -163,10 +165,11 @@ block main
                                             span.b-article__box-item   9 июля
                                             |   476 просмотров
                                     .col-2.b-article__list.justify-content-center.align-items-end
-                                            .b-article__box-bg
+                                            .b-article__box-bg(tabindex="0")
                                 
-                        .col-sm-12.col-md-4.col-lg-4
-                            a(href="#").b-article__box
+                        .col-sm-12.col-md-4.col-lg-4.b-header__mobile-box
+                            .b-article__box
+                                a(href="#")
                                 .b-article__box-img
                                 .row
                                     .col-10
@@ -177,10 +180,11 @@ block main
                                             span.b-article__box-item   9 июля
                                             |   476 просмотров
                                     .col-2.b-article__list.justify-content-center.align-items-end
-                                        .b-article__box-bg
+                                        .b-article__box-bg(tabindex="0")
                     .row.b-article__box-up
-                        .col-sm-12.col-md-4.col-lg-4
-                            a(href="#").b-article__box
+                        .col-sm-12.col-md-4.col-lg-4.b-header__mobile-box
+                            .b-article__box
+                                a(href="#")
                                 .b-article__box-img
                                 .row
                                     .col-10
@@ -191,9 +195,10 @@ block main
                                             span.b-article__box-item 9 июля
                                             |   476 просмотров
                                     .col-2.b-article__list.justify-content-center.align-items-end
-                                            .b-article__box-bg
-                        .col-sm-12.col-md-4.col-lg-4
-                            a(href="#").b-article__box
+                                            .b-article__box-bg(tabindex="0")
+                        .col-sm-12.col-md-4.col-lg-4.b-header__mobile-box
+                            .b-article__box
+                                a(href="#")
                                 .b-article__box-img
                                 .row
                                     .col-10
@@ -204,9 +209,10 @@ block main
                                             span.b-article__box-item   9 июля
                                             |   476 просмотров
                                     .col-2.b-article__list.justify-content-center.align-items-end
-                                            .b-article__box-bg
-                        .col-sm-12.col-md-4.col-lg-4
-                            a(href="#").b-article__box
+                                            .b-article__box-bg(tabindex="0")
+                        .col-sm-12.col-md-4.col-lg-4.b-header__mobile-box
+                            .b-article__box
+                                a(href="#")
                                 .b-article__box-img
                                 .row
                                     .col-10
@@ -217,11 +223,12 @@ block main
                                             span.b-article__box-item   9 июля
                                             |   476 просмотров
                                     .col-2.b-article__list.justify-content-center.align-items-end
-                                        .b-article__box-bg
+                                        .b-article__box-bg(tabindex="0")
             .col-lg-10.b-article__box-top#tab-content2
-                .row.no-gutters
+                .row
                     .col-sm-12.col-md-4.col-lg-9
-                        a(href="#").b-article__box
+                        .b-article__box
+                            a(href="#")
                             .row.b-article__border-box
                                 .col-6
                                     .b-article__box-img
@@ -240,7 +247,8 @@ block main
                                                 |   12 комментариев  
                                         .col-2.b-article__list.justify-content-center.align-items-end
                                             .b-article__box-bg(tabindex="0")
-                        a(href="#").b-article__box   
+                        .b-article__box
+                            a(href="#")   
                             .row.b-article__border-box.b-article__block-indent
                                 .col-6
                                     .b-article__box-img
@@ -258,7 +266,8 @@ block main
                                                 |   12 комментариев  
                                         .col-2.b-article__list.justify-content-center.align-items-end
                                             .b-article__box-bg(tabindex="0")
-                        a(href="#").b-article__box    
+                        .b-article__box
+                            a(href="#")    
                             .row.b-article__border-box.b-article__block-indent
                                 .col-6
                                     .b-article__box-img
@@ -277,7 +286,8 @@ block main
                                                 |   12 комментариев  
                                         .col-2.b-article__list.justify-content-center.align-items-end
                                             .b-article__box-bg(tabindex="0")
-                        a(href="#").b-article__box     
+                        .b-article__box
+                            a(href="#")     
                             .row.b-article__border-box.b-article__block-indent
                                 .col-6
                                     .b-article__box-img
@@ -302,11 +312,11 @@ block main
                     .col-sm-12.col-md-4.col-lg-3
                         .row
                             .col-sm-12
-                                .b-header__sidebar-music
-                                    .b-header__music-top
-                                        .b-header__title-music / ПЛЕЙЛИСТ 
-                                        .b-header__share-music ...
-                                    .row
+                                .b-header__sidebar
+                                    .b-header__sidebar-top
+                                        .b-header__title-sidebar / ПЛЕЙЛИСТ 
+                                        .b-header__share-sidebar ...
+                                    .row.b-header__show-top
                                         .col-6
                                             img(src="img/logo-music.png", alt="logo music").b-header__img-music
                                         .col-6
@@ -314,27 +324,71 @@ block main
                                                 .b-header__list-title THE PLAYLIST
                                                 .b-header__list-text №1
                                                 .b-header__list-link Слушать
-                                .b-header__sidebar-music
-                                    .b-header__music-top
-                                        .b-header__title-music / шоу 
-                                        .b-header__share-music ...
+                                .b-header__sidebar
+                                    .b-header__sidebar-top
+                                        .b-header__title-sidebar / шоу 
+                                        .b-header__share-sidebar ...
+                                    a(href="#",target="_blank").row.b-header__show-top
+                                        .col-6
+                                            .b-header__img-show
+                                        .col-6
+                                            .b-header__show-list 
+                                                .b-header__list-title SCAZY SHOW 
+                                                .b-header__list-text Выпуск №12
+                                    a(href="#",target="_blank").row.b-header__show-top
+                                        .col-6
+                                            .b-header__img-show
+                                        .col-6
+                                            .b-header__show-list 
+                                                .b-header__list-title SCAZY SHOW 
+                                                .b-header__list-text Выпуск №12
+                                    a(href="#",target="_blank").row.b-header__show-top
+                                        .col-6
+                                            .b-header__img-show
+                                        .col-6
+                                            .b-header__show-list 
+                                                .b-header__list-title SCAZY SHOW 
+                                                .b-header__list-text Выпуск №12
+                                .b-header__sidebar
+                                    .b-header__sidebar-top
+                                        .b-header__title-sidebar / Магазин
+                                        .b-header__share-sidebar ...
                                     .row
                                         .col-6
-                                            img(src="img/logo-music.png", alt="logo music").b-header__img-music
+                                            img(src="img/img-shop-1.png", alt="logo music").b-header__img-shop.b-header__img-top
                                         .col-6
                                             .b-header__list 
-                                                .b-header__list-title THE PLAYLIST
-                                                .b-header__list-text №1
-                                                .b-header__list-link Слушать
+                                                .b-header__list-title THE 
+                                                .b-header__shop-text Заряженный браслет
+                                                .b-header__shop-desc ₽ 500
+                                                a(href="#").b-header__list-link Добавить 
                                     .row
                                         .col-6
-                                            img(src="img/img.jpg", alt="logo music").b-header__img-music
+                                            img(src="img/coat.png", alt="logo music").b-header__img-shop.b-header__img-up
                                         .col-6
                                             .b-header__list 
-                                                .b-header__list-title THE PLAYLIST
-                                                .b-header__list-text №1
-                                                .b-header__list-link Слушать
-                                        
+                                                .b-header__list-title THE x VODA
+                                                .b-header__shop-text Дождевик лаковый.<br> Черный
+                                                .b-header__shop-desc ₽ 32 000
+                                                a(href="#").b-header__list-link Добавить
+                                    .row
+                                        .col-6
+                                            img(src="img/hippack_black.png", alt="logo music").b-header__img-shop.b-header__img-top
+                                        .col-6
+                                            .b-header__list 
+                                                .b-header__list-title THE x VODA
+                                                .b-header__shop-text заряженная сумка
+                                                .b-header__shop-desc ₽ 15 000
+                                                a(href="#").b-header__list-link Добавить
+                                a(href="#",target="_blank").b-header__sidebar.b-header__sidebar-box
+                                    .b-header__sidebar-top
+                                        .b-header__title-sidebar / События 
+                                        .b-header__share-sidebar ...
+                                    .row.b-header__show-top
+                                        .col-12
+                                            img(src="img/events_mobile.png", alt="events").b-header__event-img
+
+                                
                                     
 
 

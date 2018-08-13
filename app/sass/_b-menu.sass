@@ -12,6 +12,9 @@
         cursor: pointer
         margin-left: -15px
         display: inline-block
+    &__arrow-rotate
+        transform: rotate(180deg)
+        cursor: pointer
     &__tab-content
         max-height: 0;
         overflow: hidden
@@ -124,8 +127,7 @@
                 -webkit-transition: all .35s;
                 -o-transition: all .35s;
                 transition: all .35s;
-                &:last-child
-                    display: none
+              
     &__top-item
         padding-top: 48px
     &__news-link
@@ -138,10 +140,28 @@
         letter-spacing: 0.64px 
         cursor: pointer;
         margin-top: 50px
+        &:hover
+            opacity: 0.6
         &:before
             content: "+";
             padding-right: .45em
             display: inline-block
+    &__box-link
+        display: block;
+        font-family: 'proxima_novalight'
+        font-weight: bold
+        font-weight: 500
+        line-height: 3
+        font-size: .8em
+        letter-spacing: 0.64px 
+        cursor: pointer;
+        margin-top: 20px
+        &:hover
+            opacity: 0.6
+    &__width
+        max-width: calc(100% - 70px);
+        width: calc(100% - 22px);
+        flex-basis: calc(100% - 22px);
 
     
 .remove-menu
@@ -150,6 +170,9 @@
     display: block !important
 input[type=checkbox]    +   label::after 
     content: "+";
+    &:last-child
+        display: none
+    
 
 input:checked   ~  .b-menu__tab-content 
     max-height: 21em;   
@@ -163,5 +186,13 @@ input[type=checkbox]:checked    +   label::after
 input[type=radio]:checked   +   label::after 
     transform: rotateX(180deg);
 
-#tab-content1
+#tab-content2
     display: none
+#active-arrow
+    z-index: 10
+    cursor: pointer
+#remove-arrow
+    z-index: 10
+    display: none
+    margin-left: 30px
+
