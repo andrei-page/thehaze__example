@@ -113,9 +113,28 @@
         &:focus
             color: #c7c6c6;
             outline: none
-
+    &__border
+        &:after
+            content: ""
+            display: block
+            width: 95%
+            margin-top: 30px
+            margin-bottom: 20px 
+            margin-left: auto
+            height: 1px
+            background-color: #626262;
+            opacity: 0.35;      
     &__link-span
         margin: 0 5px 0 10px
+        &:after
+            content: "/"
+            display: inline-block
+            margin-left: 0px;
+            font-family: 'proxima_novalight'
+            margin-bottom: 0px
+            line-height: 3
+            color: black
+            font-size: .8em
     &__box-top
         position: fixed
         width: 100%;
