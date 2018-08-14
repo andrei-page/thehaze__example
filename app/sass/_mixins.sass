@@ -13,14 +13,14 @@
 	src: url('../fonts/ProximaNova-Regular.woff') format('woff');
 	font-weight: normal
 	font-style: normal	
-$xl-width: 1200px;
+$xl-width: 1500px;
 $lg-width: 992px;
 $md-width: 768px;
 $sm-width: 576px;
 $xs-width: 460px;
 
 =xl
-	@media (max-width: #{$xl-width - 1px})
+	@media (min-width: #{$xl-width - 1px} )
 		@content
 =lg
 	@media (max-width: #{$lg-width - 1px})

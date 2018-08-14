@@ -1,0 +1,165 @@
+extends templates/layout
+
+block main
+    .container-fluid
+        .b-header__box-top
+            .container-fluid
+                .row
+                    .col-4.col-sm-5
+                        .b-header__nav
+                            ul
+                                li
+                                    a(href="#") Журнал
+                                li
+                                    a(href="#") Студия 
+                                li
+                                    a(href="#") События
+                                li
+                                    a(href="#") Магазин
+                    .col-4.col-sm-2
+                        .b-header__logo
+                            a(href="#")
+                                img(src="img/logo.svg", alt="logo") 
+                    .col-4.col-sm-5
+                        .b-header__nav.b-header--right
+                            ul
+                                li
+                                    a(href="#") Поиск
+                                li
+                                    a(href="#") Корзина (0)
+                                li
+                                    a(href="#") Войти
+        .row.b-header__top
+            .col-2#tab-row
+                    .row
+                        .col-12#menu-remove
+                            .b-menu__item
+                                .b-menu__item-text * Мы создаем визуальную коммуникацию между брендами и их адуиторией, интегрируя техники цифрового искусства в маркетинговые кампании.
+                            .b-menu__top-item
+                                .b-menu__tab
+                                    input#tab-one(type='checkbox', name='tabs')
+                                    label(for='tab-one') Поток
+                                    .b-menu__tab-content
+                                        .b-menu__tab-link
+                                            ul
+                                                li
+                                                    a(href="") Культура
+                                                li
+                                                    a(href="") Исскуство
+                                                li
+                                                    a(href="") Мода 
+                                                li
+                                                    a(href="") Дизайн
+                                                li
+                                                    a(href="") Музыка
+                                                li
+                                                    a(href="") Техноголии
+                                                li
+                                                    a(href="") Герои
+                                .b-menu__tab
+                                    input#tab-two(type='checkbox', name='tabs')
+                                    label(for='tab-two') Шоу
+                                    .b-menu__tab-content
+                                        p ad quidem tenetur maxime blanditiis aperiam officia accusantium.Illum corporis modi aspernatur deserunt porro enim cumque accusamus officia distinctio quisquam aperiam eum quos tempore at, quae temporibus architecto. Cum maxime quibusdam eveniet recusandae quasi molestias dolorem eligendi incidunt.Magni id, autem at quidem non facilis nulla voluptates reprehenderit ab officia deserunt error praesentium, aut nostrum consectetur maxime aperiam deleniti libero perspiciatis alias! Impedit, repellat. Aliquid modi repudiandae consequatur!Quibusdam quos error odio dignissimos, odit magnam rerum nesciunt incidunt eligendi eaque aliquid amet illum laboriosam eos perferendis, sunt quam debitis? Vero, error ex sequi temporibus iusto ipsa cupiditate mollitia.Repellat, illum ipsam! Voluptate in, sed tempora amet quas repudiandae autem placeat officia libero adipisci. Dolor accusamus, est at, non eum maxime deleniti ipsa, tempora aspernatur asperiores reiciendis? Aspernatur, quisquam.Fugit tempora eveniet recusandae laboriosam reiciendis iste, in temporibus. Dolore laudantium aspernatur magni, ducimus beatae quibusdam quasi, consequatur, numquam quidem consequuntur voluptas officia quod perspiciatis saepe eos repellendus vero unde.Aliquam non ut excepturi obcaecati autem unde quia esse, et dicta nulla optio molestias rem doloribus voluptate, praesentium asperiores amet facilis provident! Aliquam doloremque recusandae, pariatur omnis excepturi mollitia non.
+                                .b-menu__tab
+                                    input#tab-five(type='checkbox', name='tabs')
+                                    label(for='tab-five') Плейлисты
+                                    .b-menu__tab-content
+                                        p  officiis velit autem sit ut excepturi, est consectetur accusamus, hic eligendi.Nam quia, dolor sit minima consequuntur, ab dolores ea alias a voluptatem accusantium. Laboriosam dolor iusto molestiae quidem, molestias dolores quos qui officia. Totam aliquid et nostrum obcaecati, nemo error!Corporis id commodi voluptatem maiores odit mollitia culpa aliquam nemo rem magnam qui totam magni incidunt, iusto ea nobis voluptatibus! Corporis ut dicta rem laboriosam repellendus, soluta quaerat! Atque, praesentium.Similique exercitationem eligendi dicta omnis atque repudiandae sequi autem temporibus suscipit nesciunt ab cumque, ad, quod, iure laborum nihil sunt mollitia! Nemo asperiores, eligendi cupiditate nostrum repudiandae quos dolorem deserunt!
+                                .b-menu__tab
+                                    input#tab-four(type='checkbox', name='tabs')
+                                    label(for='tab-four') Новости
+                                    .b-menu__tab-content
+                                        .b-menu__tab-menu
+                                            ul
+                                                li
+                                                    a(href="") Проекты
+                                                li
+                                                    a(href="") Релизы
+                                                li
+                                                    a(href="") Анонсы
+                            a(href="#").b-menu__news-link Оставить заявку
+                           
+            .col-10
+                ul.b-accordion
+                    li
+                        .b-accordion__box
+                            a(href="") / Дизайн.
+                            .b-accordion__link + смотреть
+                            .b-accordion__text Мы создаем визуальную коммуникацию между клиентом и его аудиторией. |
+
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.
+                    li
+                        .b-accordion__box
+                            a(href="") / Видео.
+                            .b-accordion__text Мы создаем видео контент по собственным стандартам качества. |
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.
+                    li
+                        .b-accordion__box
+                            a(href="") / Маркетинг.
+                            .b-accordion__text Мы предлагаем качественное продвижение бренда и продукта. |
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.
+                    li
+                        .b-accordion__box
+                            a(href="") / События. 
+                            .b-accordion__text Мы создаем культурные события. |
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.
+                    li
+                        .b-accordion__box
+                            a(href="") / IT. 
+                            .b-accordion__text Мы разрабатываем сайты и мобильные приложения. |
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.
+
+                        
+
+        .b-footer
+            .row
+                .d-none.d-sm-flex.col-sm-8.justify-content-center.justify-content-sm-end.order-sm-last
+                    .b-footer__menu
+                        ul
+                            li
+                                a(href="/about-us",data-toggle="modal",data-type="local",data-target="#modal") о студии
+                            li
+                                a(href="/manifest",data-toggle="modal",data-type="local",data-target="#modal") манифест
+                            li
+                                a(href="/cooperation",data-toggle="modal",data-type="local",data-target="#modal") сотрудничество
+                            li
+                                a(href="/contacts",data-toggle="modal",data-type="local",data-target="#modal") контакты
+                            li
+                                a(href="/delivery",data-toggle="modal",data-type="local",data-target="#modal") доставка
+                    .b-footer__icons
+                        ul
+                            li
+                                a(href="#",target="_blank") 
+                                    i.fab.fa-vk
+                            li
+                                a(href="https://facebook.com/thehaze.ru",target="_blank")
+                                    i.fab.fa-facebook-f
+                            li
+                                a(href="https://behance.com/thehaze",target="_blank")
+                                    i.fab.fa-behance
+                            li
+                                a(href="https://vimeo.com/thehaze",target="_blank")
+                                    i.fab.fa-vimeo-v
+                            li
+                                a(href="https://t.me/thehaze",target="_blank")
+                                    i.fab.fa-telegram-plane
+                            li
+                                a(href="https://instagram.com/thehaze",target="_blank")   
+                                    i.fab.fa-instagram 
+                .col-12.col-sm-4.order-sm-first.text-center.text-sm-left
+                    .b-footer__text © 2018 THĒ. Digital Art Studio. Founded by 
+                        a(href="https://www.thehaze.us/") Zorik Istomin
+                                    
+                                    
+                        
+                        
+                       
+            
+                
+                
