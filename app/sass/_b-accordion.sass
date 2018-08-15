@@ -21,7 +21,101 @@
         font-family: 'proxima_novaregular'
         &:hover
             opacity: 0.6
+    &__content
+        display: none
+        margin-top: 150px
+    &__main-check
+        font-size: 17px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-left: 54px
+        font-family: 'proxima_novalight'
+        cursor: pointer;
+    &__check
+        display: none
+    &__check-custom
+        position: relative;
+        width: 22px;
+        height: 22px;
+        border: 1px solid #000;
+        display: inline-block;
+        vertical-align: middle;
+     
+    &__label
+        margin-left: 20px;
+        display: inline;
+    &__btn
+        font-size: 21.8px;
+        text-align: center;
+        font-family: 'proxima_novaregular'
+        display: inline-block;
+        border: 1px #000 solid;
+        margin-top: 65px
+        padding: 8px 30px;
+        transition: all 0.3s;
+        background-color: transparent;
+        &:hover
+            background-color: #000000
+            color: #ffffff
+    &__bottom-item
+        margin-bottom: 40px
+    &__label
+        color: #000000;
+        font-family: 'proxima_novalight'
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 30.44px;
+        /* Text style for "Д, аю согл" */
+        letter-spacing: 0.58px;
+    &__input
+        width: 190px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 50px;
+        padding-bottom: 10px;
+        border: none;
+        margin-top: 70px;
+        font-size: 21px;
+        border-bottom: 1px #000 solid;
+        font-family: 'proxima_novaregular'
+        &:nth-child(4)
+            margin-right: 0
+        &:focus
+            border-bottom: 1px solid rgba(0,0,0,0.6)
+        &::placeholder
+            font-family: 'proxima_novaregular'
+            color: #000000;
 
+    &__input-area 
+        width: 100%
+        border: none
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000000
+        margin-right: 50px
+        color: #000000;
+        font-size: 21px;
+        margin-top: 50px
+        font-weight: 300;
+        /* Text style for "Сообщение" */
+        letter-spacing: 0.67px;
+        font-family: 'proxima_novaregular'   
+        &::placeholder
+            font-family: 'proxima_novaregular'
+            color: #000000;        
+    &__content-title
+        color: #000000;
+        font-size: 26px;
+        font-family: 'proxima_novaregular'
+        font-weight: 400;
+        /* Text style for "О, ставить" */
+        letter-spacing: 0.95px;
+    &__content-text
+        font-family: 'proxima_novalight'
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 31.97px;
+        /* Text style for "Выберите и" */
+        letter-spacing: 0.55px;
     &__text
         font-size: 16px
         color: #000000
@@ -32,9 +126,7 @@
     li
         list-style-type: none
         position: relative
-        p 
-            padding: 10px 25px 30px 
-            display: none
+        
         a
             width: 100%
             cursor: pointer
@@ -59,3 +151,14 @@
 .b-accordion a.active:after
 	transform: rotate(-135deg)
 	transition: all, 0.5s ease-in-out
+
+.b-accordion__check:checked +.b-accordion__check-custom::before
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #000;
+    border-radius: 2px;

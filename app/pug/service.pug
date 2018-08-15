@@ -35,49 +35,16 @@ block main
                         .col-12#menu-remove
                             .b-menu__item
                                 .b-menu__item-text * Мы создаем визуальную коммуникацию между брендами и их адуиторией, интегрируя техники цифрового искусства в маркетинговые кампании.
-                            .b-menu__top-item
-                                .b-menu__tab
-                                    input#tab-one(type='checkbox', name='tabs')
-                                    label(for='tab-one') Поток
-                                    .b-menu__tab-content
-                                        .b-menu__tab-link
-                                            ul
-                                                li
-                                                    a(href="") Культура
-                                                li
-                                                    a(href="") Исскуство
-                                                li
-                                                    a(href="") Мода 
-                                                li
-                                                    a(href="") Дизайн
-                                                li
-                                                    a(href="") Музыка
-                                                li
-                                                    a(href="") Техноголии
-                                                li
-                                                    a(href="") Герои
-                                .b-menu__tab
-                                    input#tab-two(type='checkbox', name='tabs')
-                                    label(for='tab-two') Шоу
-                                    .b-menu__tab-content
-                                        p ad quidem tenetur maxime blanditiis aperiam officia accusantium.Illum corporis modi aspernatur deserunt porro enim cumque accusamus officia distinctio quisquam aperiam eum quos tempore at, quae temporibus architecto. Cum maxime quibusdam eveniet recusandae quasi molestias dolorem eligendi incidunt.Magni id, autem at quidem non facilis nulla voluptates reprehenderit ab officia deserunt error praesentium, aut nostrum consectetur maxime aperiam deleniti libero perspiciatis alias! Impedit, repellat. Aliquid modi repudiandae consequatur!Quibusdam quos error odio dignissimos, odit magnam rerum nesciunt incidunt eligendi eaque aliquid amet illum laboriosam eos perferendis, sunt quam debitis? Vero, error ex sequi temporibus iusto ipsa cupiditate mollitia.Repellat, illum ipsam! Voluptate in, sed tempora amet quas repudiandae autem placeat officia libero adipisci. Dolor accusamus, est at, non eum maxime deleniti ipsa, tempora aspernatur asperiores reiciendis? Aspernatur, quisquam.Fugit tempora eveniet recusandae laboriosam reiciendis iste, in temporibus. Dolore laudantium aspernatur magni, ducimus beatae quibusdam quasi, consequatur, numquam quidem consequuntur voluptas officia quod perspiciatis saepe eos repellendus vero unde.Aliquam non ut excepturi obcaecati autem unde quia esse, et dicta nulla optio molestias rem doloribus voluptate, praesentium asperiores amet facilis provident! Aliquam doloremque recusandae, pariatur omnis excepturi mollitia non.
-                                .b-menu__tab
-                                    input#tab-five(type='checkbox', name='tabs')
-                                    label(for='tab-five') Плейлисты
-                                    .b-menu__tab-content
-                                        p  officiis velit autem sit ut excepturi, est consectetur accusamus, hic eligendi.Nam quia, dolor sit minima consequuntur, ab dolores ea alias a voluptatem accusantium. Laboriosam dolor iusto molestiae quidem, molestias dolores quos qui officia. Totam aliquid et nostrum obcaecati, nemo error!Corporis id commodi voluptatem maiores odit mollitia culpa aliquam nemo rem magnam qui totam magni incidunt, iusto ea nobis voluptatibus! Corporis ut dicta rem laboriosam repellendus, soluta quaerat! Atque, praesentium.Similique exercitationem eligendi dicta omnis atque repudiandae sequi autem temporibus suscipit nesciunt ab cumque, ad, quod, iure laborum nihil sunt mollitia! Nemo asperiores, eligendi cupiditate nostrum repudiandae quos dolorem deserunt!
-                                .b-menu__tab
-                                    input#tab-four(type='checkbox', name='tabs')
-                                    label(for='tab-four') Новости
-                                    .b-menu__tab-content
-                                        .b-menu__tab-menu
-                                            ul
-                                                li
-                                                    a(href="") Проекты
-                                                li
-                                                    a(href="") Релизы
-                                                li
-                                                    a(href="") Анонсы
+                            .b-menu__link-tab
+                                ul
+                                    li
+                                        a(href="") Услуги
+                                    li
+                                        a(href="") Проекты
+                                    li
+                                        a(href="") Видео
+                                    li
+                                        a(href="") Клиенты
                             a(href="#").b-menu__news-link Оставить заявку
                            
             .col-10
@@ -87,34 +54,111 @@ block main
                             a(href="") / Дизайн.
                             .b-accordion__link + смотреть
                             .b-accordion__text Мы создаем визуальную коммуникацию между клиентом и его аудиторией. |
-
-                        p
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.
+                        .b-accordion__content#content-tab 
+                            .b-accordion__content-title Оставить заявку 
+                            .b-accordion__content-text Выберите интересующие вас категории из списка выше и напишите нам письмо.<br>Мы свяжемся с вами в ближайшее время.
+                            .row
+                                .col-11.b-accordion__bottom-item
+                                    form(action="",method="post")
+                                        input(type="text",placeholder="Ваше имя").b-accordion__input
+                                        input(type="e-mail",placeholder="Email").b-accordion__input
+                                        input(type="text",placeholder="Телефон").b-accordion__input
+                                        input(type="text",placeholder="Компания").b-accordion__input
+                                        input(type="text",placeholder="Сообщение").b-accordion__input-area
+                                        button.b-accordion__btn + Отправить
+                                        label.b-accordion__main-check
+                                            input(class="b-accordion__check",type="checkbox")
+                                            span.b-accordion__check-custom
+                                            span.b-accordion__label Даю согласие на обработку моих персональных данных
+                                .col-1
+                ul.b-accordion    
                     li
                         .b-accordion__box
                             a(href="") / Видео.
                             .b-accordion__text Мы создаем видео контент по собственным стандартам качества. |
-                        p
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.
+                        .b-accordion__content#content-tab 
+                            .b-accordion__content-title Оставить заявку 
+                            .b-accordion__content-text Выберите интересующие вас категории из списка выше и напишите нам письмо.<br>Мы свяжемся с вами в ближайшее время.
+                            .row
+                                .col-11.b-accordion__bottom-item
+                                    form(action="",method="post")
+                                        input(type="text",placeholder="Ваше имя").b-accordion__input
+                                        input(type="e-mail",placeholder="Email").b-accordion__input
+                                        input(type="text",placeholder="Телефон").b-accordion__input
+                                        input(type="text",placeholder="Компания").b-accordion__input
+                                        input(type="text",placeholder="Сообщение").b-accordion__input-area
+                                        button.b-accordion__btn + Отправить
+                                        label.b-accordion__main-check
+                                            input(class="b-accordion__check",type="checkbox")
+                                            span.b-accordion__check-custom
+                                            span.b-accordion__label Даю согласие на обработку моих персональных данных
+                                .col-1                    
+                ul.b-accordion    
                     li
                         .b-accordion__box
                             a(href="") / Маркетинг.
                             .b-accordion__text Мы предлагаем качественное продвижение бренда и продукта. |
-                        p
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.
+                        .b-accordion__content#content-tab 
+                            .b-accordion__content-title Оставить заявку 
+                            .b-accordion__content-text Выберите интересующие вас категории из списка выше и напишите нам письмо.<br>Мы свяжемся с вами в ближайшее время.
+                            .row
+                                .col-11.b-accordion__bottom-item
+                                    form(action="",method="post")
+                                        input(type="text",placeholder="Ваше имя").b-accordion__input
+                                        input(type="e-mail",placeholder="Email").b-accordion__input
+                                        input(type="text",placeholder="Телефон").b-accordion__input
+                                        input(type="text",placeholder="Компания").b-accordion__input
+                                        input(type="text",placeholder="Сообщение").b-accordion__input-area
+                                        button.b-accordion__btn + Отправить
+                                        label.b-accordion__main-check
+                                            input(class="b-accordion__check",type="checkbox")
+                                            span.b-accordion__check-custom
+                                            span.b-accordion__label Даю согласие на обработку моих персональных данных
+                                .col-1
+                ul.b-accordion
                     li
                         .b-accordion__box
                             a(href="") / События. 
                             .b-accordion__text Мы создаем культурные события. |
-                        p
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.
+                        .b-accordion__content#content-tab 
+                            .b-accordion__content-title Оставить заявку 
+                            .b-accordion__content-text Выберите интересующие вас категории из списка выше и напишите нам письмо.<br>Мы свяжемся с вами в ближайшее время.
+                            .row
+                                .col-11.b-accordion__bottom-item
+                                    form(action="",method="post")
+                                        input(type="text",placeholder="Ваше имя").b-accordion__input
+                                        input(type="e-mail",placeholder="Email").b-accordion__input
+                                        input(type="text",placeholder="Телефон").b-accordion__input
+                                        input(type="text",placeholder="Компания").b-accordion__input
+                                        input(type="text",placeholder="Сообщение").b-accordion__input-area
+                                        button.b-accordion__btn + Отправить
+                                        label.b-accordion__main-check
+                                            input(class="b-accordion__check",type="checkbox")
+                                            span.b-accordion__check-custom
+                                            span.b-accordion__label Даю согласие на обработку моих персональных данных
+                                .col-1
+                ul.b-accordion
                     li
                         .b-accordion__box
                             a(href="") / IT. 
                             .b-accordion__text Мы разрабатываем сайты и мобильные приложения. |
-                        p
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ipsum, fuga, in, obcaecati magni ullam nobis voluptas fugiat tenetur voluptatum quas tempora maxime rerum neque deserunt suscipit provident cumque et mollitia ex aspernatur porro minus sapiente voluptatibus eos at perferendis repellat odit aliquid harum molestias ratione pariatur adipisci. Aliquid, iure.
-
+                        .b-accordion__content#content-tab 
+                            .b-accordion__content-title Оставить заявку 
+                            .b-accordion__content-text Выберите интересующие вас категории из списка выше и напишите нам письмо.<br>Мы свяжемся с вами в ближайшее время.
+                            .row
+                                .col-11.b-accordion__bottom-item
+                                    form(action="",method="post")
+                                        input(type="text",placeholder="Ваше имя").b-accordion__input
+                                        input(type="e-mail",placeholder="Email").b-accordion__input
+                                        input(type="text",placeholder="Телефон").b-accordion__input
+                                        input(type="text",placeholder="Компания").b-accordion__input
+                                        input(type="text",placeholder="Сообщение").b-accordion__input-area
+                                        button.b-accordion__btn + Отправить
+                                        label.b-accordion__main-check
+                                            input(class="b-accordion__check",type="checkbox")
+                                            span.b-accordion__check-custom
+                                            span.b-accordion__label Даю согласие на обработку моих персональных данных
+                                .col-1
                         
 
         .b-footer

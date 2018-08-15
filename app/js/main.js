@@ -57,11 +57,10 @@ $("#tab-2").click(function(){
 });
 
 (function($) {
-
     $('.b-accordion a').click(function(j) {
-        var dropDown = $(this).closest('li').find('p');
+        var dropDown = $(this).closest('li').find('#content-tab');
 
-        $(this).closest('.b-accordion').find('p').not(dropDown).slideUp();
+        $(this).closest('.b-accordion').find('#content-tab').not(dropDown).slideUp();
 
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
