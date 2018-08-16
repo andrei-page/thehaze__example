@@ -48,117 +48,120 @@ block main
                             a(href="#").b-menu__news-link Оставить заявку
                            
             .col-10
-                ul.b-accordion
-                    li
-                        .b-accordion__box
-                            a(href="") / Дизайн.
-                            .b-accordion__link + смотреть
-                            .b-accordion__text Мы создаем визуальную коммуникацию между клиентом и его аудиторией. |
-                        .b-accordion__content#content-tab 
-                            .b-accordion__content-title Оставить заявку 
-                            .b-accordion__content-text Выберите интересующие вас категории из списка выше и напишите нам письмо.<br>Мы свяжемся с вами в ближайшее время.
+                .b-accordion
+                    ul
+                        li
+                            .b-accordion__box
+                                a(href="").b-accordion__link-item / Дизайн.
+                                .b-accordion__link + смотреть
+                                .b-accordion__text Мы создаем визуальную коммуникацию между клиентом и его аудиторией. |
+                            .b-accordion__content#content-tab
+                                .row.b-accordion__bottom-item
+                                    .col-md-4
+                                        a(href="#").b-accordion__box-title / Ключевой визуальный образ  
+                                        .b-accordion__box-nav
+                                            a(href="#") Рекламные постеры
+                                            a(href="#") Лендинги
+                                            a(href="#") Вэб-банеры
+                                    .col-md-4
+                                        a(href="#").b-accordion__box-title / Оформление релизов 
+                                        .b-accordion__box-nav
+                                            a(href="#") Обложки музыкальных релизов
+                                            a(href="#") Постеры к фильмам и видеоиграм
+                                            a(href="#") Обложки книг и журналов
+                                            a(href="#") Анимированные заставки в instagram
+                                    .col-md-4
+                                        a(href="#").b-accordion__box-title / Брендинг     
+                                        .b-accordion__box-nav
+                                            a(href="#") Логотип
+                                            a(href="#") Фирменный стиль
+                                            a(href="#") Брендбук
+                                .row
+                                    .col-md-4
+                                        a(href="#").b-accordion__box-title / Промышленный дизайн  
+                                        .b-accordion__box-nav
+                                            a(href="#") Разработка концепции
+                                            a(href="#") Визуализация продукта
+                                            a(href="#") Дизайн упаковки
+                                    .col-md-4
+                                        a(href="#").b-accordion__box-title / Дизайн интерфейсов  
+                                        .b-accordion__box-nav
+                                            a(href="#") Дизайн мобильных приложений
+                                            a(href="#") Дизайн сайтов
+                                    .col-md-4
+                                        a(href="#").b-accordion__box-title / Дизайн пространств 
+                                        .b-accordion__box-nav
+                                            a(href="#") Функциональные рабочие зоны
+                                            a(href="#") Роспись стен и фасадов
+                                            a(href="#") Дизайн интерьера
+                            
+                        li
+                            .b-accordion__box
+                                a(href="").b-accordion__link-item / Видео.
+                                .b-accordion__text Мы создаем видео контент по собственным стандартам качества. |
+                            .b-accordion__content#content-tab 
+                                a(href="#").b-accordion__item-title / Промо ролики  
+                                a(href="#").b-accordion__item-title / Имиджевые видео
+                                a(href="#").b-accordion__item-title / Музыкальные клипы
+                                a(href="#").b-accordion__item-title / Моушн дизайн
+                                a(href="#").b-accordion__item-title / Документальные ролики
+
+                                    
+                        li
+                            .b-accordion__box
+                                a(href="").b-accordion__link-item / Маркетинг.
+                                .b-accordion__text Мы предлагаем качественное продвижение бренда и продукта. |
+                            .b-accordion__content#content-tab 
+                                a(href="#").b-accordion__item-title / SMM  
+                                a(href="#").b-accordion__item-title / Таргетинг
+                                a(href="#").b-accordion__item-title / Стратегии
+                                a(href="#").b-accordion__item-title / Бизнес-планы
+                                a(href="#").b-accordion__item-title / Презентации
+                                    
+                                
+                        li
+                            .b-accordion__box
+                                a(href="").b-accordion__link-item / События. 
+                                .b-accordion__text Мы создаем культурные события. |
+                            .b-accordion__content#content-tab 
+                                a(href="#").b-accordion__item-title / Вечеринки   
+                                a(href="#").b-accordion__item-title / Выставки   
+                                a(href="#").b-accordion__item-title / Фестивали
+                                a(href="#").b-accordion__item-title / Релизы     
+                                a(href="#").b-accordion__item-title / Лекции 
+                                    
+                            
+                        li
+                            .b-accordion__box
+                                a(href="").b-accordion__link-item / IT. 
+                                .b-accordion__text Мы разрабатываем сайты и мобильные приложения. |
+                            .b-accordion__content#content-tab 
+                                a(href="#").b-accordion__item-title / Разработка сайтов 
+                                a(href="#").b-accordion__item-title / Мобильные приложения        
+                                a(href="#").b-accordion__item-title / AR перфомнсы    
+                .row
+                    .col-11.b-accordion__bottom-item
+                        form(action="",method="post")
                             .row
-                                .col-11.b-accordion__bottom-item
-                                    form(action="",method="post")
-                                        input(type="text",placeholder="Ваше имя").b-accordion__input
-                                        input(type="e-mail",placeholder="Email").b-accordion__input
-                                        input(type="text",placeholder="Телефон").b-accordion__input
-                                        input(type="text",placeholder="Компания").b-accordion__input
-                                        input(type="text",placeholder="Сообщение").b-accordion__input-area
-                                        button.b-accordion__btn + Отправить
-                                        label.b-accordion__main-check
-                                            input(class="b-accordion__check",type="checkbox")
-                                            span.b-accordion__check-custom
-                                            span.b-accordion__label Даю согласие на обработку моих персональных данных
-                                .col-1
-                ul.b-accordion    
-                    li
-                        .b-accordion__box
-                            a(href="") / Видео.
-                            .b-accordion__text Мы создаем видео контент по собственным стандартам качества. |
-                        .b-accordion__content#content-tab 
-                            .b-accordion__content-title Оставить заявку 
-                            .b-accordion__content-text Выберите интересующие вас категории из списка выше и напишите нам письмо.<br>Мы свяжемся с вами в ближайшее время.
-                            .row
-                                .col-11.b-accordion__bottom-item
-                                    form(action="",method="post")
-                                        input(type="text",placeholder="Ваше имя").b-accordion__input
-                                        input(type="e-mail",placeholder="Email").b-accordion__input
-                                        input(type="text",placeholder="Телефон").b-accordion__input
-                                        input(type="text",placeholder="Компания").b-accordion__input
-                                        input(type="text",placeholder="Сообщение").b-accordion__input-area
-                                        button.b-accordion__btn + Отправить
-                                        label.b-accordion__main-check
-                                            input(class="b-accordion__check",type="checkbox")
-                                            span.b-accordion__check-custom
-                                            span.b-accordion__label Даю согласие на обработку моих персональных данных
-                                .col-1                    
-                ul.b-accordion    
-                    li
-                        .b-accordion__box
-                            a(href="") / Маркетинг.
-                            .b-accordion__text Мы предлагаем качественное продвижение бренда и продукта. |
-                        .b-accordion__content#content-tab 
-                            .b-accordion__content-title Оставить заявку 
-                            .b-accordion__content-text Выберите интересующие вас категории из списка выше и напишите нам письмо.<br>Мы свяжемся с вами в ближайшее время.
-                            .row
-                                .col-11.b-accordion__bottom-item
-                                    form(action="",method="post")
-                                        input(type="text",placeholder="Ваше имя").b-accordion__input
-                                        input(type="e-mail",placeholder="Email").b-accordion__input
-                                        input(type="text",placeholder="Телефон").b-accordion__input
-                                        input(type="text",placeholder="Компания").b-accordion__input
-                                        input(type="text",placeholder="Сообщение").b-accordion__input-area
-                                        button.b-accordion__btn + Отправить
-                                        label.b-accordion__main-check
-                                            input(class="b-accordion__check",type="checkbox")
-                                            span.b-accordion__check-custom
-                                            span.b-accordion__label Даю согласие на обработку моих персональных данных
-                                .col-1
-                ul.b-accordion
-                    li
-                        .b-accordion__box
-                            a(href="") / События. 
-                            .b-accordion__text Мы создаем культурные события. |
-                        .b-accordion__content#content-tab 
-                            .b-accordion__content-title Оставить заявку 
-                            .b-accordion__content-text Выберите интересующие вас категории из списка выше и напишите нам письмо.<br>Мы свяжемся с вами в ближайшее время.
-                            .row
-                                .col-11.b-accordion__bottom-item
-                                    form(action="",method="post")
-                                        input(type="text",placeholder="Ваше имя").b-accordion__input
-                                        input(type="e-mail",placeholder="Email").b-accordion__input
-                                        input(type="text",placeholder="Телефон").b-accordion__input
-                                        input(type="text",placeholder="Компания").b-accordion__input
-                                        input(type="text",placeholder="Сообщение").b-accordion__input-area
-                                        button.b-accordion__btn + Отправить
-                                        label.b-accordion__main-check
-                                            input(class="b-accordion__check",type="checkbox")
-                                            span.b-accordion__check-custom
-                                            span.b-accordion__label Даю согласие на обработку моих персональных данных
-                                .col-1
-                ul.b-accordion
-                    li
-                        .b-accordion__box
-                            a(href="") / IT. 
-                            .b-accordion__text Мы разрабатываем сайты и мобильные приложения. |
-                        .b-accordion__content#content-tab 
-                            .b-accordion__content-title Оставить заявку 
-                            .b-accordion__content-text Выберите интересующие вас категории из списка выше и напишите нам письмо.<br>Мы свяжемся с вами в ближайшее время.
-                            .row
-                                .col-11.b-accordion__bottom-item
-                                    form(action="",method="post")
-                                        input(type="text",placeholder="Ваше имя").b-accordion__input
-                                        input(type="e-mail",placeholder="Email").b-accordion__input
-                                        input(type="text",placeholder="Телефон").b-accordion__input
-                                        input(type="text",placeholder="Компания").b-accordion__input
-                                        input(type="text",placeholder="Сообщение").b-accordion__input-area
-                                        button.b-accordion__btn + Отправить
-                                        label.b-accordion__main-check
-                                            input(class="b-accordion__check",type="checkbox")
-                                            span.b-accordion__check-custom
-                                            span.b-accordion__label Даю согласие на обработку моих персональных данных
-                                .col-1
+                                .col-3
+                                    input(type="text",placeholder="Ваше имя").b-accordion__input
+
+                                .col-3
+                                    input(type="e-mail",placeholder="Email").b-accordion__input
+
+                                .col-3
+                                    input(type="text",placeholder="Телефон").b-accordion__input
+
+                                .col-3
+                                    input(type="text",placeholder="Компания").b-accordion__input
+
+                            input(type="text",placeholder="Сообщение").b-accordion__input-area
+                            button.b-accordion__btn + Отправить
+                            label.b-accordion__main-check
+                                input(class="b-accordion__check",type="checkbox")
+                                span.b-accordion__check-custom
+                                span.b-accordion__label Даю согласие на обработку моих персональных данных
+                    .col-1
                         
 
         .b-footer

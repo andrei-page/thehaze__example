@@ -14,7 +14,7 @@
     &__link
         margin-left: 60px
         justify-content: center
-        font-size: 18px
+        font-size: 14px
         display: inline-block
         cursor: pointer
         color: #000000
@@ -23,7 +23,7 @@
             opacity: 0.6
     &__content
         display: none
-        margin-top: 150px
+        margin: 70px 0
     &__main-check
         font-size: 17px;
         vertical-align: middle;
@@ -35,24 +35,25 @@
         display: none
     &__check-custom
         position: relative;
-        width: 22px;
-        height: 22px;
+        width: 15px;
+        height: 15px;
         border: 1px solid #000;
         display: inline-block;
         vertical-align: middle;
      
     &__label
-        margin-left: 20px;
+        margin-left: 14px;
         display: inline;
     &__btn
-        font-size: 21.8px;
+        font-size: 16px;
         text-align: center;
         font-family: 'proxima_novaregular'
         display: inline-block;
         border: 1px #000 solid;
         margin-top: 65px
-        padding: 8px 30px;
-        transition: all 0.3s;
+        padding: 0.75rem 30px
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        line-height: 1.5;
         background-color: transparent;
         &:hover
             background-color: #000000
@@ -62,20 +63,19 @@
     &__label
         color: #000000;
         font-family: 'proxima_novalight'
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 300;
         line-height: 30.44px;
         /* Text style for "Д, аю согл" */
         letter-spacing: 0.58px;
     &__input
-        width: 190px;
+        width: 100%;
         display: inline-block;
         vertical-align: middle;
-        margin-right: 50px;
         padding-bottom: 10px;
         border: none;
         margin-top: 70px;
-        font-size: 21px;
+        font-size: 18px;
         border-bottom: 1px #000 solid;
         font-family: 'proxima_novaregular'
         &:nth-child(4)
@@ -93,7 +93,7 @@
         border-bottom: 1px solid #000000
         margin-right: 50px
         color: #000000;
-        font-size: 21px;
+        font-size: 18px;
         margin-top: 50px
         font-weight: 300;
         /* Text style for "Сообщение" */
@@ -117,36 +117,76 @@
         /* Text style for "Выберите и" */
         letter-spacing: 0.55px;
     &__text
-        font-size: 16px
+        font-size: 14px
         color: #000000
         margin-left: 20px
         float: right
         font-family: 'proxima_novaregular'
-        margin-top: 40px
-    li
-        list-style-type: none
-        position: relative
-        
+        margin-top: 42px
+        +lg
+            margin-top: 28px
+    ul
+        padding: 0
+        li
+            list-style-type: none
+            position: relative
+            p
+                display: none
+    &__link-item
+        width: 100%
+        cursor: pointer
+        font-weight: 600
+        line-height: 3
+        font-size: 32px
+        font-family: 'proxima_novalight'
+        letter-spacing: 0.95px;
+        user-select: none
+        &:after
+            border-right: 1px solid #000000
+            border-bottom: 1px solid #000000
+            position: absolute
+            width: 10px
+            height: 10px
+            content: " "
+            margin-left: 15px
+            top: 45px
+            transform: rotate(45deg)
+            transition: all, 0.5s ease-in-out
+    &__item-title
+        color: #000000;
+        font-size: 21px;
+        font-family: 'proxima_novaregular'
+        font-weight: 400;
+        /* Text style for "/ Ключевой" */
+        letter-spacing: 0.95px;
+        display: block
+        line-height: 50px
+        &:hover
+            opacity: 0.6
+    &__box-title
+        color: #000000;
+        font-size: 21px;
+        font-family: 'proxima_novaregular'
+        font-weight: 400;
+        /* Text style for "/ Ключевой" */
+        letter-spacing: 0.95px;
+        &:hover
+            opacity: 0.6
+    &__bottom-item
+        margin-bottom: 50px
+
+    &__box-nav
+        margin: 20px 0 0 14px
         a
-            width: 100%
-            cursor: pointer
-            font-weight: 600
-            line-height: 3
-            font-size: 32px
+            display: block
+            color: #000000;
             font-family: 'proxima_novalight'
-            letter-spacing: 0.95px;
-            user-select: none
-            &:after
-                border-right: 1px solid #000000
-                border-bottom: 1px solid #000000
-                position: absolute
-                width: 10px
-                height: 10px
-                content: " "
-                margin-left: 15px
-                top: 45px
-                transform: rotate(45deg)
-                transition: all, 0.5s ease-in-out
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 35px;
+            /* Text style for "Рекламные" */
+            letter-spacing: 0.5px;
+
 
 .b-accordion a.active:after
 	transform: rotate(-135deg)
@@ -161,4 +201,3 @@
     bottom: 2px;
     left: 2px;
     background: #000;
-    border-radius: 2px;

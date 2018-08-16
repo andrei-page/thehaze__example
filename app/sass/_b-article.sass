@@ -4,20 +4,24 @@
             opacity: 1
             
     &__box-img
-        background: #777777;
-        background-size: cover
-        width: 100%
-        height: 250px
-        +xl
-            width: 92%
-        +xl
-            height: 190px
+        background-color: #d6d6d6;
+        background-size: cover;
+        background-position: center;
+        max-height: 343px;
+        &::before
+            content: "";
+            display: block;
+            padding-top: 343px;
+       
     &__item-img
-        background: #777777;
-        background-size: cover
-        width: 100%
-        margin-left: auto
-        height: 100%
+        background-color: #d6d6d6;
+        background-size: cover;
+        background-position: center;
+        max-height: 343px;
+        &::before
+            content: "";
+            display: block;
+            padding-top: 343px;
         
     &__box-title
         font-size: 1.1em

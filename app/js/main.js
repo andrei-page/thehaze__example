@@ -1,4 +1,5 @@
 
+//left sidebar
 $(" .b-menu__item-arrow").click(function(){
     $("#menu-remove").toggleClass("remove-menu");
     $("#menu-remove").removeClass("active-menu");
@@ -56,21 +57,18 @@ $("#tab-2").click(function(){
   $("#tab-content2").css("display","block")
 });
 
+//accordion-menu
 (function($) {
-    $('.b-accordion a').click(function(j) {
-        var dropDown = $(this).closest('li').find('#content-tab');
-
-        $(this).closest('.b-accordion').find('#content-tab').not(dropDown).slideUp();
-
+    $('.b-accordion .b-accordion__link-item').click(function(j) {
+        var dropDown = $(this).closest('li').find('.b-accordion__content');
+        $(this).closest('.b-accordion').find('.b-accordion__content').not(dropDown).slideUp();
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
         } else {
-            $(this).closest('.b-accordion').find('a.active').removeClass('active');
+            $(this).closest('.b-accordion').find('.b-accordion__link-item.active').removeClass('active');
             $(this).addClass('active');
         }
-
         dropDown.stop(false, true).slideToggle();
-
         j.preventDefault();
     });
 })(jQuery);
